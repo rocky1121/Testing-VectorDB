@@ -300,21 +300,6 @@ Restart the server.
 
 ---
 
-## Differences from the C++ Version
-
-| | C++ | Python |
-|---|---|---|
-| **HTTP server** | `cpp-httplib` (single header) | Flask |
-| **Threading** | `std::mutex` | `threading.Lock()` |
-| **Build step** | `g++ -std=c++17 -O2 main.cpp -o db` | None — just `python main.py` |
-| **Dependencies** | `httplib.h` (bundled) | `flask`, `requests` (pip) |
-| **Performance** | Faster raw speed | Simpler setup, sufficient for learning |
-| **Algorithms** | Identical logic | Identical logic |
-
-All three algorithms (BruteForce, KDTree, HNSW), all distance metrics, the RAG pipeline, and the full REST API are faithfully ported — the logic is identical to the C++ version.
-
----
-
 ## License
 
 MIT — use this however you want.
